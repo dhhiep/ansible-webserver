@@ -21,7 +21,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.define 'app' do |web|
     web.vm.hostname = 'webserver.ersolution.net'
-    web.vm.network :forwarded_port, guest: 80, host: 8080
+    web.vm.network :forwarded_port, guest: 80, host: 1234
     web.vm.network :private_network, ip: '192.168.60.4'
   end
 

@@ -4,7 +4,6 @@
 #  command: apt update
 
 - name: Install zsh
-  become: yes
   apt:
     name: zsh
     state: present
